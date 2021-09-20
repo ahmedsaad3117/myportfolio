@@ -1,0 +1,147 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.main-sec{
+    background-color: #90e0ef;
+    height: 100vh;
+    overflow: auto;
+}
+
+.header-cards-font{
+    font-family: 'Grechen Fuemen', cursive;
+    font-size: 190%;
+    font-weight: bolder;
+}
+.p-font-size{
+    font-size: 1.2vw;
+}
+.sec-main-sec{
+    background-color: #caf0f8;
+}
+.img-cloud{
+    position: absolute;
+    width:20%;
+}
+.img-pos1{
+    top:5%;
+    left: 15%;
+}
+.img-pos2{
+    top:35%;
+    left: 30%;
+}
+.img-pos3{
+    top:2%;
+    left: 70%;
+}
+.img-pos4{
+    top:58%;
+    left: 2%;
+}
+.img-pos5{
+    top:35%;
+    left: 38%;
+}
+.img-pos6{
+    top:5%;
+    left: 50%;
+}
+.img-pos7{
+    top:55%;
+    left: 60%;
+}
+.sun-img{
+    top:0px;
+    left: 10px;
+    position: absolute;
+    width:20%;
+}
+
+/******* night seen *********/
+.night-seen{
+    
+    display: none;
+    
+}
+
+
+
+
+html { background: linear-gradient(#000005, #050520); }
+
+canvas {
+  display: block;
+  
+  position: absolute;
+}
+
+#light {
+    background: radial-gradient(30% 60%, circle contain, hsla(240, 100%, 20%, .25) 0%, hsla(240, 0%, 0%, 0) 100%);
+    height: 80%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  
+  }
+
+#ground {
+  background: linear-gradient(#101020, #001);
+  bottom: 0;
+  height: 30%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#moon {
+  background: linear-gradient(#99a, rgb(242, 242, 245));
+  border-radius: 100%;
+  box-shadow: 0 0 150px hsla(0, 0%, 100%, .3);
+  top: 20%;
+  height: 200px;
+  left: 10%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  width: 200px;
+}
+
+#house {
+  background: #000;
+  bottom: 30%;
+  height: 18px;
+  left: 30%;
+  margin: 0 0 0 -15px;
+  position: absolute;
+  width: 30px;
+}
+
+#house:before {
+  background: #000;
+  top: -15px;
+  content: '';
+  display: block;
+  height: 12px;
+  left: 21px;
+  margin: 0 0 0 0;
+  position: absolute;
+  width: 6px;
+  z-index: 2;
+}
+
+#house:after {
+  border-bottom: 15px solid #000;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  top: -15px;
+  content: '';
+  display: block;
+  height: 0;
+  left: 50%;
+  margin: 0 0 0 -20px;
+	position: absolute;
+  width: 0;
+}
+
