@@ -2,12 +2,23 @@ html,body {
     height: 100%;
     width: 100%;
 }
-
+.test{
+    border: solid 3px black;
+    background-color: red;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-sec{
     background-color: #90e0ef;
     height: 100vh;
     overflow: auto;
+}
+.carousel-item{
+    margin: 0 auto;
+    
 }
 
 .header-cards-font{
@@ -20,6 +31,9 @@ html,body {
 }
 .sec-main-sec{
     background-color: #caf0f8;
+   
+}
+.border-shadow{
     border-radius: 10px;
     box-shadow: 15px 13px 5px 0px rgba(0, 0, 0, 0.46);
     -webkit-box-shadow: 15px 13px 5px 0px rgba(51, 93, 104, 0.46);
