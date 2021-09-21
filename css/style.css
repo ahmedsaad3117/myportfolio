@@ -40,6 +40,24 @@ html,body {
     
 }
 
+/******* Bird seen *********/
+
+.bird-canv{
+    
+  
+    position: absolute;
+   
+    top:10%;
+    padding-top: 0;
+    width: 250%;
+    height: 400px;
+    z-index: 999;
+    padding-right: 77%;
+    padding-left: 77%
+}
+
+
+
 /******* night seen *********/
 .night-seen{
     

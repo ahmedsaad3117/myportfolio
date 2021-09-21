@@ -1,4 +1,25 @@
 
+// var canvasbird = document.getElementById("bird-can");
+// var ctx2 = canvasbird.getContext("2d");
+// var imgbird = new Image();
+// imgbird.src = "https://kohlin.net/images/bird.png";
+
+// imgbird.addEventListener("load", function(){
+//   var frames1 = [0, 24,48,24];
+//   var indexbird = 0;
+//   var birdX = 0;
+//   function fly(){
+//     ctx2.clearRect(0, 0, canvasbird.width, canvasbird.height);
+//     ctx2.drawImage(imgbird, 0, frames1[indexbird++], 34, 24,  birdX++, 24,34, 24);
+//     if (indexbird > 3 ) indexbird = 0;
+//     setTimeout(fly, 20)
+//   }
+//   fly();
+
+// })
+
+
+
 window.requestAnimFrame = function () { return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (a) { window.setTimeout(a, 1E3 / 60) } }();
 
 var c = document.getElementById('c');
@@ -95,5 +116,4 @@ $(document).ready(function () {
     makeStarfield();
     loop();
 })
-
 
