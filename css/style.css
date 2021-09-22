@@ -6,7 +6,7 @@ html,body {
 
 }
 .test{
-    border: black solid 3px;
+    border: red solid 3px;
 }
 .list-info-card{
     list-style-type: none;
@@ -31,6 +31,10 @@ html,body {
 }
 .p-font-size{
     font-size: 1.2vw;
+}
+.p-font-type{
+  font-family: 'Circular Std Book', cursive;
+  
 }
 .sec-main-sec{
     background-color: #caf0f8;
@@ -102,9 +106,10 @@ html { background: linear-gradient(#000005, #050520); }
 
 canvas {
   display: block;
-  
+  right: 0;
   position: absolute;
   width: 100%;
+ 
 }
 
 #light {
@@ -173,15 +178,19 @@ canvas {
 	position: absolute;
   width: 0;
 }
+/********************   plane continer             *******/
+.plane-container{
+  width: 100px;
+  height: 100px;
 
+}
 
 /******      plane             *******/ 
 .plane {
-   position: absolute;
+  position: absolute;
    z-index: 1;
-   width: 100%;
   height: 60px;
-  top:10%;
+  top:20%;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
@@ -223,3 +232,7 @@ canvas {
     }
   }
   
+/************* rocket seen  ************/
+.o-main{
+  display: none;
+}

@@ -1,30 +1,10 @@
 
-// var canvasbird = document.getElementById("bird-can");
-// var ctx2 = canvasbird.getContext("2d");
-// var imgbird = new Image();
-// imgbird.src = "https://kohlin.net/images/bird.png";
-
-// imgbird.addEventListener("load", function(){
-//   var frames1 = [0, 24,48,24];
-//   var indexbird = 0;
-//   var birdX = 0;
-//   function fly(){
-//     ctx2.clearRect(0, 0, canvasbird.width, canvasbird.height);
-//     ctx2.drawImage(imgbird, 0, frames1[indexbird++], 34, 24,  birdX++, 24,34, 24);
-//     if (indexbird > 3 ) indexbird = 0;
-//     setTimeout(fly, 20)
-//   }
-//   fly();
-
-// })
-
-
 
 window.requestAnimFrame = function () { return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (a) { window.setTimeout(a, 1E3 / 60) } }();
 
 var c = document.getElementById('c');
 var ctx = c.getContext('2d');
-var cw = c.width = window.innerWidth;
+var cw = c.width = window.innerWidth ;
 var ch = c.height = window.innerHeight * .7;
 var rand = function (a, b) { return ~~((Math.random() * (b - a + 1)) + a); }
 
@@ -95,6 +75,7 @@ var loop = function () {
 $(document).ready(function () {
     $(".sec-main-sec").css({backgroundColor:"#101020" ,color:"#eef"});
     $(".main-sec").css({backgroundColor: "linear-gradient(#000005, #050520)"})
+    $(".sun-img").animate({top:"60%"},3000);
 
     $(".sun-img , .carousel-control-prev").click(function () {
         $(".sun-img").animate({top:"60%"},3000);
