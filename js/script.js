@@ -93,17 +93,19 @@ var loop = function () {
 }
 
 $(document).ready(function () {
-    
+    $(".sec-main-sec").css({backgroundColor:"#101020" ,color:"#eef"});
+    $(".main-sec").css({backgroundColor: "linear-gradient(#000005, #050520)"})
 
-    $(".sun-img").click(function () {
+    $(".sun-img , .carousel-control-prev").click(function () {
         $(".sun-img").animate({top:"60%"},3000);
         $(".main-sec").animate({backgroundColor: "linear-gradient(#000005, #050520)"},3000)
         $(".sec-main-sec").animate({backgroundColor:"#101020" ,color:"#eef"},3000)
         $(".moring-seen").fadeOut(3000);
         $(".night-seen").fadeIn(3000);
     })
+   
 
-    $("#moon").click(function () {
+    $("#moon,.carousel-control-next").click(function () {
         $(".moring-seen").fadeIn(3000);
         $(".night-seen").fadeOut(3000);
         $(".sun-img").animate({top:"0%"},3000);
@@ -111,14 +113,8 @@ $(document).ready(function () {
         $(".sec-main-sec").animate({backgroundColor:"#caf0f8" ,color:"#000"},3000)
         
     })
+    
 
-    $(".next-card").click(function(){
-       
-        $(".card-class-1").animate({left:"60%"},1000);
-        $(".card-class-1").fadeOut();
-        $(".card-class-2").fadeIn(3000);
-
-    })
 
 
 
