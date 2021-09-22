@@ -1,8 +1,22 @@
 html,body {
     height: 100%;
     width: 100%;
-}
+   
 
+
+}
+.test{
+    border: black solid 3px;
+}
+.list-info-card{
+    list-style-type: none;
+}
+.list-span{
+    color: rgb(108, 117, 125);
+    font-size: 100%;
+    font-weight: bolder;
+   
+}
 
 .main-sec{
     background-color: #90e0ef;

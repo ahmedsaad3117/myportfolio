@@ -112,6 +112,15 @@ $(document).ready(function () {
         
     })
 
+    $(".next-card").click(function(){
+       
+        $(".card-class-1").animate({left:"60%"},1000);
+        $(".card-class-1").fadeOut();
+        $(".card-class-2").fadeIn(3000);
+
+    })
+
+
 
     makeStarfield();
     loop();
